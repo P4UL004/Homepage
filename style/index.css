@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.purple-text {
+    color: #BC8BE3;
+}
+
+.white-text {
+    color: white;
+}
+
+
+/* HEADER */
+header {
+    background-image: url("../images/HeaderBg.svg");
+    height: 6rem;
+}
+
+header p {
+    color: white;
+    padding-top: 2rem;
+    padding-left: 7rem;
+    font-family: "Anonymous Pro";
+    font-size: 22px;
+}
+
+#header-content {
+    display: flex;
+    position: left;
+}
+
+#uj-logo {
+    padding-top: 0.7rem;
+    padding-left: 0.2rem;
+}
+
+#icon-section {
+    margin-left: 6rem;
+    padding-top: 1.5rem;
+}
+
+.header-icon {
+    padding-left: 2rem;
+}
+
+
+
+/* INTRODUÇÃO */    
+#intro-section {
+    height: 45rem;
+    background-image: url("../images/Background01.svg");
+    display: flex;
+}
+
+.text-container {
+    flex: 1;
+}
+
+#intro-section p {
+    margin-left: 3rem;
+}
+
+#intro-section-content {
+    padding-top: 5rem;
+}
+
+#intro-weare {
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+#intro-title {
+    font-family: "Anonymous Pro";
+    font-size: 128px;
+    margin-bottom: 2rem;
+}
+
+#intro-description {
+    font-family: "IBM Plex Mono";
+    font-size: 28px;
+    text-align: justify;
+    width: 45rem;
+}
+
+#intro-logo {
+    margin: 0;
+}
+
+
+
+/* INTRODUÇÃO */    
+#about-section {
+    height: 45rem;
+    background-image: url("../images/Background02.svg");
+    display: flex;
+}
+
+#about-section p {
+    margin-left: 3rem;
+}
+
+#about-title {
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+
+#about-content {
+    font-family: "IBM Plex Mono";
+    font-size: 20px;
+    text-align: justify;
+    width: 40rem;
+}
+
+#about-image {
+    margin: 0;
+    width: 45%;
+    height: 75%;
+    padding-right: 1rem;
+}
+
+#about-button {
+    margin-left: 3rem;
+    margin-top: 2rem;
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+    background-color: #BC8BE3;
+    color: black;
+    width: 15rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#about-button:hover{
+    background-color: black;
+    color: white;
+}
