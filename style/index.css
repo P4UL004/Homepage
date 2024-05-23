@@ -142,3 +142,96 @@ header p {
     background-color: black;
     color: white;
 }
+
+
+
+/* PROJETOS */    
+#project-section {
+    height: 60rem;
+    background-image: url("../images/Background03.svg");
+    display: flex;
+}
+
+#project-section-content {
+    margin-left: 3rem;
+}
+
+#project-title {
+    margin-top: 2rem;
+    font-family: "Anonymous Pro";
+    font-size: 36px;
+}
+
+#project-subtitle {
+    margin-top: 0.5rem;
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+}
+
+#project-list {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 78rem;
+}
+
+#project-list li {
+    background-color: #BC8BE3;
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 32px;
+    height: 5rem;
+    text-align: center;
+    list-style-type: none;
+    padding-top: 2rem;
+}
+
+#first-item {
+    border-radius: 90px 90px 0px 0px;
+}
+
+#last-item {
+    border-radius: 0px 0px 90px 90px;
+}
+
+#show-project01 {
+    display: none;
+}
+
+#show-project02 {
+    display: flex;
+}
+
+#show-project03 {
+    display: flex;
+}
+
+#show-project04 {
+    display: flex;
+}
+
+#show-project05 {
+    display: flex;
+}
+
+.hidden-text {
+    background-image: url("../images/BackgroundHidden.svg");
+    font-family: "IBM Plex Mono";
+    font-size: 18px;
+    text-align: justify;
+}
+
+.hidden-text p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.hidden-text img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
