@@ -22,9 +22,9 @@
     <div id="header-content">
 
         <img src = "images/UJLogo.svg" id="uj-logo">
-        <p>Sobre o NITE</p>
-        <p>Nossos Projetos</p>
-        <p>Serviços</p>
+        <a href="#about-section">Sobre o NITE</a>
+        <a href="#project-section" onclick="toggleContent('show-project01')">Nossos Projetos</a>
+        <a>Serviços</a>
 
         <div id="icon-section">
             <img src="images/SpotifyIcon.svg" class="header-icon">
@@ -53,35 +53,51 @@
         <div id="about-section-content" class="text-container">
             <p class="purple-text" id="about-title">O que é o NITE?</p>
             <p class="white-text"  id="about-content">O NITE (Núcleo de Inovação Tecnologia e Empreendedorismo) é um grupo seleto de membros integrantes de múltiplos cursos relacionados da UNIJORGE, dedicados a desenvolver projetos e soluções para exposição futura em eventos, auxílio de empresas parceiras, e para o auxílio de entidades privadas. <br> <br> Composto por estudantes e professores com visão empreendedora e vontade de fazer a diferença, o NITE representa uma ponte entre a academia e o mercado, promovendo a troca de conhecimento, experiências e recursos. Com uma abordagem multidisciplinar, os membros do NITE trabalham em projetos que vão desde a criação de novos produtos e serviços até a implementação de soluções inovadoras para desafios específicos enfrentados por empresas e organizações.</p>
-            <button id="about-button">Nossos Projetos</button>
+            <a href="#project-section" onclick="toggleContent('show-project01')"><button id="about-button">Nossos Projetos</button></a>
         </div>
         
         <img src="images/UJImage.svg" id="about-image">
     </div>
 
     <!-- Projetos -->
-    <div id="project-section" class="flex-container">
-        <div id="project-section-content" class="text-container">
-            <p class="purple-text" id="project-title">Nossos Projetos</p>
-            <p class="white-text" id="project-subtitle">Conheça o trabalho do NITE!</p>
-            
-            <div id="project-list">
-                <li id="first-item">REVITALIZAÇÃO DE UM DATACENTER</li>
-                <div id="show-project01" class="hidden-text">
-                    <p class="white-text">O projeto de revitalização do Data Center antigo da UNIJORGE foi um marco na modernização da infraestrutura de TI. Através de um diagnóstico completo e implementação estratégica de soluções inovadoras, o Data Center foi completamente renovado, resultando em um ambiente mais eficiente, confiável e seguro.<br> <br>A atualização de hardware e software, otimização da refrigeração, modernização da rede, virtualização e medidas de segurança reforçadas garantiram um aumento significativo no desempenho, confiabilidade e segurança das operações. Além disso, a revitalização proporcionou economia de custos com energia e otimização do uso de recursos.</p>
-                    <img src="images/ProjectDatacenter.svg">
+    <div id="end-section">
+        <div id="project-section" class="flex-container">
+            <div id="project-section-content" class="text-container">
+                <p class="purple-text" id="project-title">Nossos Projetos</p>
+                <p class="white-text" id="project-subtitle">Conheça o trabalho do NITE!</p>
+                
+                <div id="project-list">
+
+                    <li id="first-item" onclick="toggleContent('show-project01')">REVITALIZAÇÃO DE UM DATACENTER</li>
+                    <div id="show-project01" class="hidden-text">
+                        <p class="white-text">O projeto de revitalização do Data Center antigo da UNIJORGE foi um marco na modernização da infraestrutura de TI. Através de um diagnóstico completo e implementação estratégica de soluções inovadoras, o Data Center foi completamente renovado, resultando em um ambiente mais eficiente, confiável e seguro.<br> <br>A atualização de hardware e software, otimização da refrigeração, modernização da rede, virtualização e medidas de segurança reforçadas garantiram um aumento significativo no desempenho, confiabilidade e segurança das operações. Além disso, a revitalização proporcionou economia de custos com energia e otimização do uso de recursos.</p>
+                        <img src="images/ProjectDatacenter.svg">
+                    </div>
+
+                    <li>ROBÔ ATENDENTE</li>
+                    <li>GARRA ROBÓTICA</li>
+                    <li>LABIRINTO DESAFIANTE</li>
+                    <li>NITECAST</li>
+                    <li id="last-item">MODELAGEM 3D</li>
                 </div>
-                <li>ROBÔ ATENDENTE </li>
-                <li>GARRA ROBÓTICA </li>
-                <li>LABIRINTO DESAFIANTE</li>
-                <li>NITECAST</li>
-                <li id="last-item">MODELAGEM 3D</li>
             </div>
         </div>
-    </div>
 
+        <footer>
+            <p id="footer-title" class="purple-text">Deseja conversar conosco?</p>
+            <p id="footer-subtitle" class="white-text">Mande sua mensagem!</p>
+
+            <form id="footer-form">
+                <textarea class="footer-input" id="footer-message" placeholder="Sua Mensagem" rows="4" cols="50" wrap="hard"></textarea>
+                <input class="footer-input" placeholder="E-mail", type="email">
+                <input class="footer-input" placeholder="Nome", type="text">
+            </form>
+
+            <button id="footer-button">ENVIAR</button>
+        </footer>
+    </div>
 </body>
 
-<script src="js/toogleProjectShow.js"></script>
-
+<script src="js/toggleContent.js"></script>
+<script src="js/smoothTransition.js"></script>
 </html>

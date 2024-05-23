@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .purple-text {
     color: #BC8BE3;
 }
@@ -18,7 +22,7 @@ header {
     height: 6rem;
 }
 
-header p {
+header a {
     color: white;
     padding-top: 2rem;
     padding-left: 7rem;
@@ -145,10 +149,12 @@ header p {
 
 
 
-/* PROJETOS */    
-#project-section {
-    height: 60rem;
+/* PROJETOS  e FOOTER */
+#end-section {
+    height: 110rem;
     background-image: url("../images/Background03.svg");
+}
+#project-section {
     display: flex;
 }
 
@@ -185,6 +191,7 @@ header p {
     text-align: center;
     list-style-type: none;
     padding-top: 2rem;
+    cursor: pointer;
 }
 
 #first-item {
@@ -223,15 +230,81 @@ header p {
 }
 
 .hidden-text p {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .hidden-text img {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+}
+
+footer {
+    padding-top: 20rem;
+    margin-left: 3rem;
+
+}
+
+#footer-title {
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+}
+
+#footer-subtitle {
+    font-family: "Anonymous Pro";
+    font-size: 16px;
+    padding-top: 0.5rem;
+}
+
+#footer-form {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 80rem;
+    gap: 1rem;
+}
+
+.footer-input {
+    font-family: "Anonymous Pro";
+    font-size: 16px;
+    background-color: #BC8BE3;
+    color: black;
+    border: none;
+    height: 2rem;
+    padding-left: 0.5rem;
+}
+
+.footer-input:focus {
+    outline: 2px solid #BC8BE3;
+}
+
+#footer-message {
+    padding-top: 0.5rem;
+    height: 10rem;
+}
+
+#footer-button {
+    margin-top: 2rem;
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+    background-color: #BC8BE3;
+    color: black;
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#footer-button:hover{
+    background-color: black;
+    color: white;
+}
+
+::placeholder {
+    color: black;
 }
